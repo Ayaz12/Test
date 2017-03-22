@@ -15,7 +15,7 @@ describe("UserTest", function () {
         var defaultUser = new user("Abeer", "Scayle");
 
         var updatedUser = new user();
-        updatedUser.Update("", "Scayle");
+        updatedUser.Update("Abeer", "Scayle");
 
 
 
