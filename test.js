@@ -6,11 +6,11 @@ var user = require("./New/main");
 var chai = require("chai");
 var assert = chai.assert;
 
-describe("UserTest", function () {
+describe("UpdateTest", function () {
 
 
     it("Update User Test", function () {
-        //console.log("Hello there");
+        console.log("Update");
 
         var defaultUser = new user("Abeer", "Scayle");
 
@@ -21,6 +21,26 @@ describe("UserTest", function () {
 
         assert.equal(defaultUser.Name, updatedUser.Name);
         assert.equal(defaultUser.Company, updatedUser.Company);
+
+    });
+
+
+
+});
+
+describe("CheckTest", function () {
+    it("Check User Test", function () {
+        console.log("Check");
+
+        var checkDefaultUser = new user("Abeer", "Scayle");
+
+        var checkUpdatedUser = new user();
+
+        checkUpdatedUser.Check("Abeer", "Scayle");
+
+
+        assert.equal(checkDefaultUser.Name, checkUpdatedUser.Name);
+        assert.equal(checkDefaultUser.Company, checkUpdatedUser.Company);
 
     });
 });

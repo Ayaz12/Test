@@ -16,6 +16,11 @@ User.prototype.Update = function (name, company) {
 
 };
 
+User.prototype.Check = function (name, company) {
+
+    this.Name = name;
+    this.Company = company;
+};
 
 
 
