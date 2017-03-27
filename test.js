@@ -15,7 +15,7 @@ describe("UpdateTest", function () {
         var defaultUser = new user("Abeer", "Scayle");
 
         var updatedUser = new user();
-        updatedUser.Update("Abeer", "Scayle");
+        updatedUser.Update("", "Scayle");
 
 
 
@@ -24,11 +24,6 @@ describe("UpdateTest", function () {
 
     });
 
-
-
-});
-
-describe("CheckTest", function () {
     it("Check User Test", function () {
         console.log("Check");
 
@@ -43,4 +38,10 @@ describe("CheckTest", function () {
         assert.equal(checkDefaultUser.Company, checkUpdatedUser.Company);
 
     });
+
+
 });
+
+// describe("CheckTest", function () {
+//
+// });
