@@ -24,6 +24,10 @@ describe("UpdateTest", function () {
 
     });
 
+
+});
+
+describe("CheckTest", function () {
     it("Check User Test", function () {
         console.log("Check");
 
@@ -38,10 +42,4 @@ describe("UpdateTest", function () {
         assert.equal(checkDefaultUser.Company, checkUpdatedUser.Company);
 
     });
-
-
 });
-
-// describe("CheckTest", function () {
-//
-// });
